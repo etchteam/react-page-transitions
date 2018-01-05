@@ -14,7 +14,7 @@ function Page({
   const cx = classNames({
     page: true,
     'page--prev': state && state.prev,
-  })
+  });
   return (
     <section 
       className={cx}
@@ -23,9 +23,7 @@ function Page({
         background,
       }}
     >
-      <div className="page__inner">
-        {children}
-      </div>
+      {children}
     </section>
   );
 }
